@@ -17,7 +17,15 @@ import 'bulma/css/bulma.css'
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<div class="section">
+			<div class="container">
+				<div class="columns is-mobile is-centered">
+					<div class="column is-half has-text-centered">
+						<slot />
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 <!-- <style>
