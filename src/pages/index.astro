@@ -4,7 +4,18 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Bienvenido a 'Fede.website'">
+	<div class="box has-background-info-light">
+		<h1 class="title"> <a href="https://fede.website/">Fede</a></h1>
+	</div>
 	
+	<!-- With of the parent -->
+	<div style="width: inherit; margin: 1rem 25%;">
+		<figure class="image is-square">
+			<img class="is-rounded" src="{{ .RelPermalink }}" >
+		</figure>
+	</div>
+
+	<h2 class="is-size-5 has-text-weight-bold my-1">Portafolio:</h2>
 </Layout>
 <!-- <Layout title="Welcome to Astro.">
 	<button class="button is-primary">Primary</button>
