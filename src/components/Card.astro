@@ -1,24 +1,37 @@
 ---
 export interface Props {
-	title: string;
-	body: string;
 	href: string;
+	websiteTitle: string;
+	description: string;
+	technologieslist: string;
 }
 
-const { href, title, body } = Astro.props as Props;
+const { href, websiteTitle, description, technologieslist } = Astro.props as Props;
+
+const technologieslistArray = technologieslist.split(",");
+
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+<div>
+	<div class="box has-background-primary-light">
+	<p class="has-text-weight-medium"><a href={href}>{websiteTitle}</a></p>
+	</div>
+
+	<p class="content is-medium my-1">{description}</p>
+	<details>
+	<summary class="content is-medium">Tecnologías utilizadas:</summary>
+
+	<div class="content is-medium">
+		<ol class="is-upper-roman">
+			{technologieslistArray.map((item) => (
+				<li>{item}</li>
+			))}
+		</ol>
+	</div>
+
+	</details>
+
+</div>
 <!-- <style>
 	:root {
 		--link-gradient: linear-gradient(45deg, #4f39fa, #da62c4 30%, var(--color-border) 60%);
