@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import fede from '../images/fede.avif';
 ---
 
 <Layout title="Bienvenido a 'Fede.website'">
@@ -11,7 +12,7 @@ import Card from '../components/Card.astro';
 	<!-- With of the parent -->
 	<div style="width: inherit; margin: 1rem 25%;">
 		<figure class="image is-square">
-			<img class="is-rounded" src="{{ .RelPermalink }}" >
+			<img src={fede} width="40" alt="Astro" class="is-rounded"/>
 		</figure>
 	</div>
 
