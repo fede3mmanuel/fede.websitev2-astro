@@ -5,3 +5,5 @@ Powered by:
 - [Astro](https://astro.build)
 
 - [Bulma](https://bulma.io/)
+
+[Sitemap](https://fede.website/sitemap-index.xml)
