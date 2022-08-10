@@ -13,13 +13,13 @@ const profilephoto = new URL('/fedeog.avif', Astro.url);
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="og:image" content={profilephoto.href}>
-		<meta name="og:url" content={pageurl.href}>
-		<meta name="og:type" content="website">
-		<meta name="og:title" content={title}>
+		<meta property="og:image" content={profilephoto.href}>
+		<meta property="og:url" content={pageurl.href}>
+		<meta property="og:type" content="website">
+		<meta property="og:title" content={title}>
 		<!-- It is short for social media -->
-		<meta name="og:description" content="Sitio Web de Fede">
-		
+		<meta property="og:description" content="Sitio Web de Fede">
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
