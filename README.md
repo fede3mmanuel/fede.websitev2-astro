@@ -6,4 +6,6 @@ Powered by:
 
 - [Bulma](https://bulma.io/)
 
-[Sitemap](https://fede.website/sitemap-index.xml)
+[Sitemap of sitemap](https://fede.website/sitemap-index.xml)
+
+[Sitemap](https://fede.website/sitemap-0.xml)
