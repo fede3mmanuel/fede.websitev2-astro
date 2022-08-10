@@ -5,6 +5,8 @@ export interface Props {
 
 const { title } = Astro.props as Props;
 import 'bulma/css/bulma.css'
+
+import fede from '../images/fede.avif';
 ---
 
 <!DOCTYPE html>
@@ -16,6 +18,8 @@ import 'bulma/css/bulma.css'
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Sitio Web personal de Fede">
 		<title>{title}</title>
+
+		<meta name="og:image" content={fede}>
 	</head>
 	<body>
 		<div class="section">
