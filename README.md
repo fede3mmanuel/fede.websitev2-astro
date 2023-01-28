@@ -9,3 +9,5 @@ Powered by:
 [Sitemap of sitemap](https://fede.website/sitemap-index.xml)
 
 [Sitemap](https://fede.website/sitemap-0.xml)
+
+execution command: npm run dev
