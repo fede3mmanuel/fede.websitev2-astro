@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^1.2.2",
-    "astro": "^2.3.0"
+    "@astrojs/sitemap": "*",
+    "astro": "*"
   },
   "dependencies": {
-    "bulma": "^0.9.4"
+    "bulma": "*"
   }
 }
